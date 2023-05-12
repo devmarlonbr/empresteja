@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-1216 {
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+.dropshadow {
+  box-shadow: 0px 20px 44px 0px #93133166;
+}
+
+/* acc */
+
+.accordion-active {
+}
+
+.accordion-active
+  > button
+  > .accordion-head-info
+  > .accordion-icon
+  > .accordion-icon-less {
+  display: block;
+}
+
+.accordion-icon-less {
+  display: none;
+}
+
+.accordion-active
+  > button
+  > .accordion-head-info
+  > .accordion-icon
+  > .accordion-icon-plus {
+  display: none;
+}
+
+.accordion-text {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion-active > .accordion-text {
+  animation: 0.25s linear;
+  animation-name: result_box_appearance;
+  max-height: 320px;
+  overflow: visible;
+}
+
+@keyframes result_box_appearance {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    max-height: 320px;
+    overflow: visible;
+  }
+}
+
+/* header */
+
+.bg-fixed {
+  background-color: #041f4f80;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s;
+}
