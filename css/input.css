@@ -93,8 +93,54 @@ img {
 
 /* header */
 
+.active-navbar {
+  display: flex !important;
+  animation: animate-open 0.25s ease-out;
+  opacity: 1;
+}
+
 .bg-fixed {
-  background-color: #041f4f80;
+  background-color: #041f4f80 !important;
   backdrop-filter: blur(12px);
   transition: all 0.25s;
+}
+
+@keyframes animate-open {
+  0% {
+    transform: translatey(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+/* float */
+
+.animate-floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-floating:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.animate-floating:nth-child(3) {
+}
+
+.animate-floating:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }

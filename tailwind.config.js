@@ -8,7 +8,7 @@ module.exports = {
         yinmnBlue: "#E62E59",
         black: "#000000",
         battleshipGray: "##898989",
-        silver: "##B2B2B2",
+        silver: "#B2B2B2",
         platinum: "#EAEAEA",
         platinum30: "#EAEAEA4D",
         white: "#fff",
@@ -17,6 +17,7 @@ module.exports = {
         emerald: "#00CC77",
         yinmnBlue10: "#e62e591A",
         borderColor: "#EAEAEA",
+        gray: "#E4E8F2",
       },
       fontSize: {
         head56: "3.5rem",

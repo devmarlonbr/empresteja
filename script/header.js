@@ -1,4 +1,6 @@
 const header = document.querySelector("#header");
+const headerNavbar = document.querySelector("#header-navbar-list");
+const buttonNavbar = document.querySelector("#button-navbar");
 
 window.onscroll = function () {
   handleScroll();
@@ -12,3 +14,13 @@ const handleScroll = () => {
     header.classList.remove("bg-fixed");
   }
 };
+
+function handleNavbarClick(e) {
+  if (headerNavbar.classList.contains("active-navbar")) {
+    headerNavbar.classList.remove("active-navbar");
+    return;
+  }
+
+  headerNavbar.classList.add("active-navbar");
+}
+buttonNavbar.addEventListener("click", handleNavbarClick);
