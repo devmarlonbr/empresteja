@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="min-h-[912px] bg-gradient-to-b from-[#E19099] to-[#CE727F]">
+    <div class="bg-gradient-to-b from-[#E19099] to-[#CE727F]">
       <header
         id="header"
         class="bg-cardinal md:bg-transparent px-6 lg:px-0 z-50 w-full py-5 lg:py-[16px] fixed transition-all"
@@ -69,7 +69,7 @@
         </div>
       </header>
       <main
-        class="h-full flex flex-col items-center px-[24px] lg:px-0 container-1216"
+        class="md:min-h-[912px] h-full flex flex-col items-center px-[24px] lg:px-0 container-1216"
       >
         <div
           class="h-full flex flex-col justify-between items-center pt-[130px]"
@@ -95,7 +95,7 @@
             </a>
           </div>
 
-          <div class="w-full pt-[120px] md:pt-0 relative">
+          <div class="w-full pt-[120px] md:pt-0 relative hidden md:block">
             <img src="./assets/bg-fgts-image.png" alt="" srcset="" />
             <img
               class="absolute top-[120px] left-[40px] animate-floating"
@@ -115,6 +115,10 @@
               alt=""
               srcset=""
             />
+          </div>
+
+          <div class="pt-[120px] flex md:hidden">
+            <img src="./assets/bg-fgts-image-mob.png" alt="" srcset="" />
           </div>
         </div>
       </main>
