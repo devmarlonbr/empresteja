@@ -715,10 +715,6 @@ video {
   margin-top: 64px;
 }
 
-.mb-auto {
-  margin-bottom: auto;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -777,10 +773,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.min-h-\[912px\] {
-  min-height: 912px;
 }
 
 .min-h-\[918px\] {
@@ -1115,11 +1107,6 @@ video {
   background-color: #e62e591A;
 }
 
-.bg-emerald {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 204 119 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\.\/\.\/assets\/bg-pattern-ja\.svg\'\)\] {
   background-image: url('.././assets/bg-pattern-ja.svg');
 }
@@ -1350,8 +1337,8 @@ video {
   padding-top: 80px;
 }
 
-.pt-\[\] {
-  padding-top: ;
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1704,8 +1691,16 @@ img {
     display: none;
   }
 
+  .md\:h-\[628px\] {
+    height: 628px;
+  }
+
   .md\:min-h-\[912px\] {
     min-height: 912px;
+  }
+
+  .md\:w-\[482px\] {
+    width: 482px;
   }
 
   .md\:grid-cols-2 {
